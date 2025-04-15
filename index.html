@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <img src="virtual.png" alt="logo">
+            <h1>Fancy<span>Tech</span></h1>  
+        </div>
+    </header>
+    <main>
+    <section class="hero-section">
+        <h1>Welcome to <br><span>Fancy Tech</span></h1>
+   <p>Your business, our priority</p>
+   <a href="https://wa.me/qr/3UXZ6JVRWP4RP1">Get Started</a>
+    </section>
+    <div class="about">
+        <h4>ABOUT</h4>
+        <h1>Find Out More <span>About Us</span></h1>
+        <p>At <span>FancyTech</span>, We provide you with alot of surprises.
+       With us, you can grow your business in an extraordinary way. We enjoy turning ideas into reality through clean, efficient code and modern design. </p>
+         
+    </div>
+    <div class="skills">
+        <h4>SKILLS</h4>
+        <ul>
+            <li class="gd">Graphic design</li>
+            <li class="css">Electrical Wiring</li>
+            <li class="html">Front-end development</li>
+            
+            
+            <li class="ng">Mobile unlocking / flashing</li>
+        </ul>
+    </div>
+    
+    <div class="donate">
+        <h2>Donate to Fancy Tech now</h2>
+    <pre>
+    To keep FancyTech business alive,
+    support us by donating to us</pre>
+    <a href="donate.html" download >Donate Here</a>
+    </div>
+    <footer>
+        <p>&copy; iTech, 2025<span> All right reserved</span></p>
+    </footer>
+      <div class="particles"></div>
+      </main>
+    <script>
+        const particlesContainer = document.querySelector('.particles');
+
+for (let i = 0; i < 100; i++) {
+  const particle = document.createElement('div');
+  particle.classList.add('particle');
+  particle.style.top = `${Math.random() * 100}%`;
+  particle.style.left = `${Math.random() * 100}%`;
+  particle.style.animationDelay = `${Math.random() * 5}s`;
+  particle.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
+  particlesContainer.appendChild(particle);
+}
+        
+    </script>
+</body>
+</html>
